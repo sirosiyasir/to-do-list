@@ -1,37 +1,31 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>To Do List</title>
 
-<head>
-  <meta charset="utf-8">
-  <title>To Do List</title>
-  
-  <!-- CSS link -->
-  <link rel="stylesheet" href="css/styles.css">
+    <!-- CSS link -->
+    <link rel="stylesheet" href="css/styles.css" />
 
-  <!-- Font from Google -->
-  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-</head>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/ff84dc085c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-  <div class="container">
-
-    <div class="card">
-
+  <body>
+    <div class="container">
       <h1>TO DO LIST</h1>
-      <input type="text" name="" value="" placeholder="write here">
-      <button id="firstButton" type="button" name="button">Send</button>
-
-      <div class="list">
-        <!-- with javascript add list -->
-      </div>
-
+      <input type="text" placeholder="write here" maxlength="65" />
+      <button id="sendButton" type="button" onclick="typeWriter()">Send</button>
+      <button id="clearButton">Clear</button>
+      <form action="">
+        <!-- <ul><li></li></ul> -->
+      </form>
+      <h3 id="myName"></h3>
     </div>
 
-  </div>
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script type="text/javascript" src="script.js"></script>
-</body>
-
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>
