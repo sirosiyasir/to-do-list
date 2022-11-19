@@ -120,6 +120,13 @@ sendButton.addEventListener("click", () => {
   })
 })
 
+/* Enter keydown */
+input.addEventListener("keydown", (event)=> {
+  if(event.key === "Enter"){
+    sendButton.click()
+  }
+})
+
 /* Remove all to do */
 clearButton.addEventListener("click", () => {
   form.innerHTML = ""
